@@ -35,5 +35,18 @@ namespace APIDeployTest.Controllers
             })
             .ToArray();
         }
+
+
+        [HttpGet]
+        public WeatherForecast GetChilly()
+        {
+            var rng = new Random();
+            return new WeatherForecast()
+            {
+                Date = DateTime.Now,
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries.First(str => str.Contains("Chilly"))
+            };
+        }
     }
 }
