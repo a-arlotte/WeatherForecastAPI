@@ -5247,11 +5247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adam.arlotte\\source\\repos\\WeatherForecastTest\\WeatherForecastTest.csproj",
+      "projectUniqueName": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastTest\\WeatherForecastTest.csproj",
       "projectName": "WeatherForecastTest",
-      "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\WeatherForecastTest\\WeatherForecastTest.csproj",
+      "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastTest\\WeatherForecastTest.csproj",
       "packagesPath": "C:\\Users\\adam.arlotte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adam.arlotte\\source\\repos\\WeatherForecastTest\\obj\\",
+      "outputPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5274,8 +5274,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest.csproj": {
-              "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest.csproj"
+            "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj": {
+              "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj"
             }
           }
         }

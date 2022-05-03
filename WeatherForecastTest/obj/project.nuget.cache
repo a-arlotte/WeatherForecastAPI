@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UTwEVvs0zVLcsjcb7baZW2UUD1VO5HXVeiNeDETqbn5mF0sFgXe1vHgC3RMjdc9gT0cTBE9IidM+hU4WZn4o5A==",
+  "dgSpecHash": "LGHoRb4RKhJF7hxppQr701N6y6zYl0p8wTu6tJqKS5eChEl8PPqj14T04PsNGgbxCddQORH9yhfZ7ZJJvT31PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adam.arlotte\\source\\repos\\WeatherForecastTest\\WeatherForecastTest.csproj",
+  "projectFilePath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastTest\\WeatherForecastTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adam.arlotte\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\adam.arlotte\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
