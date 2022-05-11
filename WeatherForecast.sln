@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastAPI", "APIDeployTest\WeatherForecastAPI.csproj", "{174A07B5-E9B0-49B3-BD12-6D3C588B887E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastAPI", "WeatherForecastAPI\WeatherForecastAPI.csproj", "{174A07B5-E9B0-49B3-BD12-6D3C588B887E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastTest", "WeatherForecastTest\WeatherForecastTest.csproj", "{4EF8EE2F-B41F-4402-9958-C3B926308D3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecastLibrary", "WeatherForecastLibrary\WeatherForecastLibrary.csproj", "{20B6A944-DFA4-4219-BEF9-8DF282AC397F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastLibrary", "WeatherForecastLibrary\WeatherForecastLibrary.csproj", "{20B6A944-DFA4-4219-BEF9-8DF282AC397F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

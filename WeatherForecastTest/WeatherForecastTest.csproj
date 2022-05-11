@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\APIDeployTest\WeatherForecastAPI.csproj" />
+    <ProjectReference Include="..\WeatherForecastAPI\WeatherForecastAPI.csproj" />
     <ProjectReference Include="..\WeatherForecastLibrary\WeatherForecastLibrary.csproj" />
   </ItemGroup>
 
