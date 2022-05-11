@@ -4,54 +4,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WeatherForecastLibrary;
 
-namespace APIDeployTest.Controllers
+namespace WeatherForecastAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
-
-        //Test Variables
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        public List<WeatherForecast> GetTestWeatherForecasts()
-        {
-            //create test list of weather forecasts
-            return new List<WeatherForecast>()
-            {
-                new WeatherForecast()
-                {
-                    Date = DateTime.Now,
-                    Summary = "Chilly",
-                    TemperatureC = 10
-                },
-                new WeatherForecast()
-                {
-                    Date = DateTime.Now,
-                    Summary = "Freezing",
-                    TemperatureC = 0
-                },
-                new WeatherForecast()
-                {
-                    Date = DateTime.Now,
-                    Summary = "Warm",
-                    TemperatureC = 20
-                },
-                new WeatherForecast()
-                {
-                    Date = DateTime.Now,
-                    Summary = "Hot",
-                    TemperatureC = 25
-                }
-            };
-        }
-
-
-        List<WeatherForecast> weatherForecasts = new List<WeatherForecast>();
+        private IEnumerable<WeatherForecast> weatherForecasts = WeatherForecastLibrary.WeatherForecastLibrary.GetTestWeatherForecasts();
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -59,13 +20,10 @@ namespace APIDeployTest.Controllers
         {
             _logger = logger;
         }
-        public WeatherForecastController()
-        {
-            this.weatherForecasts = GetTestWeatherForecasts();
-        }
+
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> GetAllWeatherForecasts()
+        public IEnumerable<WeatherForecast> GetAll()
         {
             return weatherForecasts;
         }
@@ -74,6 +32,7 @@ namespace APIDeployTest.Controllers
         public IEnumerable<WeatherForecast> GetRandom()
         {
             var rng = new Random();
+            string[] Summaries = WeatherForecastLibrary.WeatherForecastLibrary.Summaries;
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

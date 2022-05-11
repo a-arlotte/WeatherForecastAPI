@@ -4,12 +4,12 @@
     "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastTest\\WeatherForecastTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj": {
+    "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj",
-        "projectName": "APIDeployTest",
-        "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj",
+        "projectUniqueName": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj",
+        "projectName": "WeatherForecastAPI",
+        "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj",
         "packagesPath": "C:\\Users\\adam.arlotte\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,7 +33,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj": {
+                "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -73,7 +77,67 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj",
+        "projectName": "WeatherForecastLibrary",
+        "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj",
+        "packagesPath": "C:\\Users\\adam.arlotte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adam.arlotte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -107,8 +171,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj": {
-                "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj"
+              "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj": {
+                "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj"
+              },
+              "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj": {
+                "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj"
               }
             }
           }
@@ -155,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

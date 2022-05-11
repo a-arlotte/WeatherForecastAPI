@@ -1332,22 +1332,33 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "APIDeployTest/1.0.0": {
+      "WeatherForecastAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.11.1",
-          "Swashbuckle.AspNetCore": "5.6.3"
+          "Swashbuckle.AspNetCore": "5.6.3",
+          "WeatherForecastLibrary": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/APIDeployTest.dll": {}
+          "bin/placeholder/WeatherForecastAPI.dll": {}
         },
         "runtime": {
-          "bin/placeholder/APIDeployTest.dll": {}
+          "bin/placeholder/WeatherForecastAPI.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "WeatherForecastLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WeatherForecastLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherForecastLibrary.dll": {}
+        }
       }
     }
   },
@@ -5224,18 +5235,24 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "APIDeployTest/1.0.0": {
+    "WeatherForecastAPI/1.0.0": {
       "type": "project",
-      "path": "../APIDeployTest/APIDeployTest.csproj",
-      "msbuildProject": "../APIDeployTest/APIDeployTest.csproj"
+      "path": "../APIDeployTest/WeatherForecastAPI.csproj",
+      "msbuildProject": "../APIDeployTest/WeatherForecastAPI.csproj"
+    },
+    "WeatherForecastLibrary/1.0.0": {
+      "type": "project",
+      "path": "../WeatherForecastLibrary/WeatherForecastLibrary.csproj",
+      "msbuildProject": "../WeatherForecastLibrary/WeatherForecastLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "APIDeployTest >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
+      "WeatherForecastAPI >= 1.0.0",
+      "WeatherForecastLibrary >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -5274,8 +5291,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj": {
-              "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\APIDeployTest.csproj"
+            "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj": {
+              "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\APIDeployTest\\WeatherForecastAPI.csproj"
+            },
+            "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj": {
+              "projectPath": "C:\\Users\\adam.arlotte\\source\\repos\\APIDeployTest\\WeatherForecastLibrary\\WeatherForecastLibrary.csproj"
             }
           }
         }
@@ -5322,7 +5342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

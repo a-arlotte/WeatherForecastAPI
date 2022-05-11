@@ -3,7 +3,9 @@ using APIDeployTest;
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using APIDeployTest.Controllers;
+using WeatherForecastAPI.Controllers;
+using WeatherForecastLibrary;
+using Microsoft.Extensions.Logging;
 
 namespace WeatherForecastTest
 {
@@ -17,7 +19,8 @@ namespace WeatherForecastTest
         [SetUp]
         public void Setup()
         {
-            controller = new WeatherForecastController();
+            Logger<WeatherForecastController> logger = new Logger<WeatherForecastController>(new LoggerFactory());
+            controller = new WeatherForecastController(logger);
         }
 
 
@@ -30,7 +33,7 @@ namespace WeatherForecastTest
             //Act
 
             //Assert
-            Assert.That(controller.GetAllWeatherForecasts().Count() == 4);
+            Assert.That(controller.GetAll().Count() == 4);
         }
 
         [Test]
